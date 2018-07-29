@@ -6,8 +6,9 @@ html {
 }
 
 body {
+  font-family: "kg_miss_kindergarten_regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(1rem + (16 - 14) * (100vw - 320px) / (1366 - 320));
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* 
@@ -26,8 +27,19 @@ img {
 
 p,
 ul {
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1.5em;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "heptalbold", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* 
@@ -42,8 +54,13 @@ ul {
   width: 100%;
   min-height: 10vh;
   align-items: center;
-  font-size: 1em;
-  padding: 5px 20px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 460px) {
+  .header__inner {
+    padding: 5px 30px;
+  }
 }
 
 .header__logo {
@@ -54,15 +71,15 @@ ul {
 .header__title {
   flex-grow: 1;
   text-align: right;
-  text-transform: uppercase;
 }
 
 .header__title h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin: 2px 0;
 }
 
 .header__title p {
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -70,13 +87,13 @@ ul {
   Hero
  */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   color: #fff;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 @media screen and (max-width: 449px) {
@@ -108,15 +125,13 @@ ul {
 }
 
 .hero__title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2.6em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-size: 3.6em;
 }
 
 .hero__message {
   font-size: 1.3em;
   text-align: center;
+  line-height: 1.7;
 }
 
 /* 
@@ -128,18 +143,17 @@ ul {
 }
 
 .featured-work__title {
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 2.3em;
   position: relative;
   text-align: center;
 }
 
 .featured-work__item {
-  margin-bottom: 2em;
+  margin-bottom: 1.8em;
 }
 
 .featured-work__item h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0.67em 0;
   text-transform: uppercase;
 }
@@ -169,14 +183,6 @@ ul {
 }
 
 @media screen and (min-width: 960px) {
-  /* .featured-work__item:nth-of-type(1) {
-    padding-right: 15px;
-  }
-
-  .featured-work__item:nth-of-type(2) {
-    padding-left: 15px;
-  } */
-
   .featured-work__item {
     margin-bottom: 0;
     width: calc(100% / 3);
@@ -215,7 +221,6 @@ ul {
 
 .credits__title {
   font-size: 2em;
-  text-transform: uppercase;
   margin-top: 1em;
 }
 
@@ -237,4 +242,3 @@ ul {
     align-self: flex-end;
   }
 }
-
